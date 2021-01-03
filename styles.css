@@ -30,7 +30,36 @@ nav {
   top: 30%;
   left: 9%;
 }
-.btn-list {
+.answer-container {
+  display: flex;
+  margin-bottom: 8px;
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid bisque;
+  border-radius: 25px;
+}
+.answer-container:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 bisque;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.answer-prefix {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  background-color: seashell;
+  border: 2px solid bisque;
+  border-radius: 25px;
+  font-size: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.answer-text {
+  margin-left: 10%;
+  padding-top: 15px;
+}
+/* .btn-list {
   display: grid;
   margin: 20px;
   gap: 10px;
@@ -45,7 +74,7 @@ nav {
   border-radius: 25px;
   border: 2px solid bisque;
   background: seashell;
-}
+} */
 
 #begin-btn {
   font-size: 25px;
