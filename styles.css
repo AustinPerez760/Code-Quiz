@@ -58,6 +58,14 @@ nav {
 .answer-text {
   margin-left: 10%;
   padding-top: 15px;
+  width: 100%;
+}
+.correct {
+  background-color: chartreuse;
+}
+
+.incorrect {
+  background-color: red;
 }
 /* .btn-list {
   display: grid;
@@ -84,18 +92,25 @@ nav {
   border-radius: 25px;
 }
 
-#next-btn {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 2px solid black;
-}
-
 .control-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 20px;
+  margin-top: auto;
+}
+
+.hud-main {
+  text-align: center;
 }
 
 .hide {
