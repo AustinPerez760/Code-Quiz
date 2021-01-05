@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>End of Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="endOfQuiz" class="flex-center flex column">
+      <h1 id="userFinalScore">0</h1>
+      <form>
+        <input
+          type="text"
+          name="Nickname"
+          id="nickname"
+          placeholder="Nickname"
+        />
+        <button
+          type="submit"
+          class="btn"
+          id="postScoreBtn"
+          onclick="saveFinalScore(event)"
+        >
+          Post Score
+        </button>
+      </form>
+      <a class="btn" hred="/index.html">Quiz Again</a>
+      <a class="btn" hred="/">Main Screen</a>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>

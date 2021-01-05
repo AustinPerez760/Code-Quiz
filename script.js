@@ -128,6 +128,8 @@ function getNewQuestion() {
   }
 
   questionCount++;
+  questionProgress.innerText = questionCount + "/" + MAX_QUESTIONS;
+
   var questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
