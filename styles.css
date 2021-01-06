@@ -7,12 +7,12 @@ nav {
 }
 
 .title {
-  margin: auto;
   width: 20%;
   padding: 10px;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+  margin-right: 39%;
 }
 
 .container-timer {
@@ -21,6 +21,7 @@ nav {
   font-weight: bold;
 }
 .container {
+  width: 100%;
   background-color: cornflowerblue;
   opacity: 0.8;
   border-radius: 25px;
@@ -67,22 +68,6 @@ nav {
 .incorrect {
   background-color: red;
 }
-/* .btn-list {
-  display: grid;
-  margin: 20px;
-  gap: 10px;
-  background-color: seashell;
-  opacity: 0.6;
-  border-radius: 25px;
-  border: 2px solid;
-  padding: 20px;
-}
-
-#btn {
-  border-radius: 25px;
-  border: 2px solid bisque;
-  background: seashell;
-} */
 
 #begin-btn {
   font-size: 25px;
@@ -90,6 +75,7 @@ nav {
   padding: 10px 20px;
   border: 2px solid black;
   border-radius: 25px;
+  margin-left: 35px;
 }
 
 .control-center {
@@ -113,6 +99,78 @@ nav {
   text-align: center;
 }
 
+#postScoreBtn {
+  /* display: flex;
+  flex-direction: column;
+  width: 15%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: cornflowerblue; */
+}
+
+.end-container {
+  width: 80%;
+  background-color: cornflowerblue;
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid;
+  position: fixed;
+  top: 25%;
+  left: 9%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 blue;
+}
+
+#postScoreBtn {
+  /* width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid bisque;
+  border-radius: 25px;
+  background-color: cornflowerblue; */
+  border: 2px solid bisque;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.answer-container-end {
+  display: flex;
+  margin-bottom: 12px;
+  width: 10%;
+  font-size: 24px;
+  border: 2px solid bisque;
+  border-radius: 25px;
+}
+
+#userFinalScore {
+  margin-left: 48%;
+}
+
+#mainScreenBtn {
+  border: 2px solid bisque;
+  border-radius: 25px;
+  margin-top: 10px;
+}
 .hide {
   display: none;
 }

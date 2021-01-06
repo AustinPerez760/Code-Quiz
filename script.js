@@ -3,11 +3,11 @@ const question = document.getElementById("quiz-question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
 const questionProgress = document.getElementById("questionProgress");
 const quizTime = document.getElementById("quizTime");
+const scoreText = document.getElementById("quizScore");
 //Constants for the begin button to initate the quiz
 const beginButton = document.getElementById("begin-btn");
 const promptContainerElement = document.getElementById("prompt-container");
-// var promptElement = document.getElementById("prompt");
-// var answerButtonElement = document.getElementById("answer-choices");
+
 beginButton.addEventListener("click", beginButtonStart);
 
 //Variables
@@ -19,7 +19,7 @@ var availableQuestions = [];
 
 //CONSTANTS for amount of question the user will recieve
 const MAX_QUESTIONS = 10;
-
+const CORRECT_POINTS = 10;
 //begin function to initiate dynamic quiz onclick
 function beginButtonStart() {
   console.log("started");
@@ -123,8 +123,11 @@ function startQuiz() {
 // function grabs a new question from the question object and applys prompts it to the avalibleQuestion empty array
 function getNewQuestion() {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem("recentScore", score);
     //if quiz is over return to homepage
-    return window.location.assign("");
+    return window.location.assign(
+      "/Users/austinperez/Desktop/Homework-4/Code-Quiz/end.html"
+    );
   }
 
   questionCount++;
@@ -152,7 +155,6 @@ answers.forEach((answer) => {
     if (!sortingAnswers) return;
 
     sortingAnswers = false;
-
     const selectedAnswer = e.target;
     const answer = selectedAnswer.dataset["number"];
 
@@ -160,6 +162,10 @@ answers.forEach((answer) => {
     if (answer == currentQuestion.answer) {
       classToRun = "correct";
     }
+    if (classToRun === "correct") {
+      incrementScore(CORRECT_POINTS);
+    }
+
     selectedAnswer.parentElement.classList.add(classToRun);
     //delay so class does not applied and then removed immediatley
     setTimeout(() => {
@@ -172,6 +178,11 @@ answers.forEach((answer) => {
     //console.log(answer == currentQuestion.answer);
   });
 });
+
+function incrementScore(num) {
+  score += num;
+  scoreText.innerText = score;
+}
 
 startQuiz();
 
