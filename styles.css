@@ -1,5 +1,8 @@
 nav {
   background-color: cornflowerblue;
+  opacity: 0.8;
+  text-align: center;
+  border: 1px solid black;
 }
 
 .navbar-brand {
@@ -70,6 +73,7 @@ nav {
 }
 
 #begin-btn {
+  width: 20%;
   font-size: 25px;
   font-weight: bold;
   padding: 10px 20px;
@@ -99,19 +103,6 @@ nav {
   text-align: center;
 }
 
-#postScoreBtn {
-  /* display: flex;
-  flex-direction: column;
-  width: 15%;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 20px;
-  border: 2px solid black;
-  border-radius: 25px;
-  background-color: cornflowerblue; */
-}
-
 .end-container {
   width: 80%;
   background-color: cornflowerblue;
@@ -139,15 +130,6 @@ input {
 }
 
 .btn {
-  /* width: 100%;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: 2px solid bisque;
-  border-radius: 25px;
-  background-color: cornflowerblue; */
   width: 50%;
   padding-top: 8px;
   padding-bottom: 8px;

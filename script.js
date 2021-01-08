@@ -4,6 +4,7 @@ const answers = Array.from(document.getElementsByClassName("answer-text"));
 const questionProgress = document.getElementById("questionProgress");
 const quizTime = document.getElementById("quizTime");
 const scoreText = document.getElementById("quizScore");
+
 //Constants for the begin button to initate the quiz
 const beginButton = document.getElementById("begin-btn");
 const promptContainerElement = document.getElementById("prompt-container");
@@ -185,14 +186,3 @@ function incrementScore(num) {
 }
 
 startQuiz();
-
-//displayNextPrompt();
-
-// // Function needed to prompt next question
-// function displayNextPrompt() {
-//   showPrompt();
-// }
-
-// function showPrompt(prompt) {}
-
-// prompts to eventually be cycled through by a function and or for loop using and object and array

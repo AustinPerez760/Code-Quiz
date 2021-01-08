@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 20%;
+  left: 9%;
+}
+
+.btn {
+  width: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: cornflowerblue;
+  border: 2px solid steelblue;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  font-size: 22px;
+}
